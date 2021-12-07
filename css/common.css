@@ -1,0 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lobster&family=Signika+Negative:wght@300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    font-family: Signika Negative, sans-serif;
+}
+
+img {
+    display: block;
+}
