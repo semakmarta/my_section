@@ -3,6 +3,10 @@
     padding-bottom: 55px;
     background-color: #faf4f0;
 }
+.what_we_do_header_inner_grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
 .what_we_do_header_inner{
     margin-top: 50px;
     padding-left: 15px;
