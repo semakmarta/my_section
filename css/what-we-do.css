@@ -120,6 +120,11 @@
     text-align: center;
     vertical-align: baseline;
 }
+
 .what_we_do_anchor_text{
     color: rgb(255, 216, 50);
+}
+.what_we_do_anchor_text:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
