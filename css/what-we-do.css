@@ -1,28 +1,54 @@
-.what_we_do_section{
-    background-image: url(../img/background-img.webp);
+@media (min-width: 400px) {
+    .what_we_do_content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width: 400px) {
+    .what_we_do_section {
+        display: flex;
+        background-position: center;
+    }
+}
+@media (min-width: 400px) {
+    .what_we_do_content_inner {
+        flex-direction: column;
+        min-height: 360px;
+    }
+}
+@media (min-width: 400px) {
+    .what_we_do_content-card {
+        flex-direction: column;
+        min-height: 360px;
+        min-width: 200px;
+    }
+}
+.what_we_do_section {
+    width: 100%;
+    background-image: url(../img/background-what-we-do-img.webp);
     background-position: center;
-    background-size: contain;
-    min-height: 600px;
+    background-size: cover;
+    min-height: 400px;
     padding-top: 40px;
     padding-bottom: 55px;
-    background-color: #faf4f0;
 }
-.what_we_do_header_inner_grid{
+.what_we_do_header_inner_grid {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
 }
-.what_we_do_header_inner{
+.what_we_do_header_inner {
     margin-top: 50px;
     padding-left: 15px;
     padding-right: 15px;
 }
-.what_we_do_header{
+.what_we_do_header {
     text-align: center;
     margin-left: -15;
     margin-right: -15;
 }
-.what_we_do_header-subheader{
-    color: rgb(235, 109, 47);
+.what_we_do_header-subheader {
+    color: var(--orange);
     font-size: 14px;
     font-stretch: 100%;
     font-weight: 700;
@@ -31,8 +57,8 @@
     margin: 0px;
     text-align: center;
 }
-.what_we_do_header-main{
-    color: rgb(90, 55, 51);
+.what_we_do_header-main {
+    color: var(--brown);
     font-size: 38px;
     font-stretch: 100%;
     font-weight: 700;
@@ -40,15 +66,15 @@
     text-align: center;
     line-height: 47.5px;
 }
-.what_we_do_header-text{
-    color: rgb(65, 57, 57);
+.what_we_do_header-text {
+    color: var(--main-text-color);
     font-size: 18px;
     font-stretch: 100%;
     font-weight: 400;
     line-height: 28.8px;
     text-align: center;
 }
-.what_we_do_header_line-container{
+.what_we_do_header_line-container {
     padding-top: 15px;
     padding-bottom: 15px;
     display: flex;
@@ -57,29 +83,31 @@
     position: relative;
     vertical-align: baseline;
 }
-.what_we_do_header_line{
-    height:4px;
-    width:10%;
-    background-color:#eb6d2f;
-    border-color: rgb(90, 55, 51);
+.what_we_do_header_line {
+    color: var(--orange);
+    height: 4px;
+    width: 10%;
+    background-color: var(--orange);
+    border-color: var(--brown);
     border-bottom-width: 0px;
     border-top-width: 0px;
     border-left-width: 0px;
     border-right-width: 0px;
 }
-.what_we_do_content{
+.what_we_do_content {
+    width: 100%;
     margin-top: 45px;
 }
-.what_we_do_content-card{
+.what_we_do_content-card {
+    width: 100%;
     padding: 15px;
     display: flex;
     justify-content: flex-start;
     text-align: center;
     display: block;
 }
-.what_we_do_content_inner{
-    background-color: rgb(255, 255, 255);
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+.what_we_do_content_inner {
+    background-color: var(--white);
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 31px;
@@ -92,14 +120,15 @@
     position: relative;
     font-weight: 400;
 }
-.what_we_do_icon_wrapper{
+.what_we_do_icon_wrapper {
+    width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
     vertical-align: baseline;
 }
-.what_we_do_card-name{
-    color: rgb(90, 55, 51);
+.what_we_do_card-name {
+    color: var(--brown);
     font-size: 23px;
     font-stretch: 100%;
     font-weight: 700;
@@ -108,9 +137,10 @@
     vertical-align: baseline;
     margin-top: 20px;
 }
-.what_we_do_card-text{
-    margin-top: 15px;
-    color: rgb(65, 57, 57);
+.what_we_do_card-text {
+    margin-top: auto;
+    min-height: 65px;
+    color: var(--main-text-color);
     font-size: 16px;
     font-stretch: 100%;
     font-weight: 400;
@@ -118,8 +148,8 @@
     text-align: center;
     vertical-align: baseline;
 }
-.what_we_do_anchor_container{
-    margin-top: 26px;
+.what_we_do_anchor_container {
+    margin-top: auto;
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -127,12 +157,13 @@
     line-height: 27.2px;
     text-align: center;
     vertical-align: baseline;
+    justify-self: end;
+}
+.what_we_do_anchor_text {
+    color: var(--yellow);
 }
 
-.what_we_do_anchor_text{
-    color: rgb(255, 216, 50);
-}
-.what_we_do_anchor_text:hover{
+.what_we_do_anchor_text:hover {
     cursor: pointer;
     text-decoration: underline;
 }

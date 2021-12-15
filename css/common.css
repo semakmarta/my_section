@@ -1,21 +1,40 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lobster&family=Signika+Negative:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lobster&family=Signika+Negative:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;700&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-:root{
+:root {
     font-family: Signika Negative, sans-serif;
+
+    --main-text-color: #413939;
+    --brown: #5a3733;
+    --light-brown: #836763;
+    --second-brown: #663b36;
+    --background-color: #f9f3ee;
+    --silver: #d1c5c1;
+    --white: #ffffff;
+    --gray: #929393;
+    --yellow: #f7d832;
+    --orange: #eb6d2f;
+    --black: #000000;
+}
+
+html {
+    background-color: var(--background-color);
 }
 
 img {
     display: block;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--black);
 }
 
+.container-width {
+    max-width: 80%;
+}
