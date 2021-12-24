@@ -1,8 +1,7 @@
 @media (min-width: 400px) {
     .what_we_do_content {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        justify-content: center;
     }
 }
 @media (min-width: 400px) {
@@ -13,7 +12,7 @@
 }
 @media (min-width: 400px) {
     .what_we_do_content_inner {
-        flex-direction: column;
+        /* flex-direction: column; */
         min-height: 360px;
     }
 }

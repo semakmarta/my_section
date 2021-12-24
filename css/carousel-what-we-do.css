@@ -1,0 +1,10 @@
+.what_we_do_content{
+    display: flex;
+    justify-content: center;
+}
+.what_we_do_carousel_slide{
+    display: flex;
+}
+.what_we_do-carousel-container{
+    display: flex;
+}
